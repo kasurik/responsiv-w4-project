@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+<style>
+    #image{
+    line-height:650px;
+		width: 575px;
+    height: 350px;
+		border:5px solid black;
+		margin:0 auto;
+    background-color: #8e68ff;
+    background-image: url('');
+    background-repeat: no-repeat;
+    color:#FFFFFF;
+    text-align: center;
+    background-size: 100%;
+    margin-bottom:25px;
+    font-size: 150%;
+}
+
+</style>
+
+</head>
+<body>
+
+    <div class="container">
+        <br><br>
+        <h1 class="text-center text-info">Table with image gallery</h1><br><br>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+ 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Ultimate_Frisbee%2C_Jul_2009_-_19.jpg" alt="image1" class="img-fluid rounded mx-auto d-block " onmouseover = "upDate(this)" onmouseout = "unDo()">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ultimate_Frisbee_Colorado_Cup_2005.jpg/512px-Ultimate_Frisbee_Colorado_Cup_2005.jpg" alt="image2" class="img-fluid rounded mx-auto d-block" onmouseover = "upDate(this)" onmouseout = "unDo()">
+            </div>
+        
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                
+                <img src="https://farm4.staticflickr.com/3948/15409853738_7dbfbfbac7_k.jpg" alt="image3"class="img-fluid rounded mx-auto d-block" onmouseover = "upDate(this)" onmouseout = "unDo()">
+            </div>
+        
+        </div>
+<br>
+
+        <div class="row">
+
+
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                
+                <img src="https://farm4.staticflickr.com/3948/15409853738_7dbfbfbac7_k.jpg" alt="image3"class="img-fluid rounded mx-auto d-block" onmouseover = "upDate(this)" onmouseout = "unDo()">
+            </div>
+        
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+ 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Ultimate_Frisbee%2C_Jul_2009_-_19.jpg" alt="image1" class="img-fluid rounded mx-auto d-block " onmouseover = "upDate(this)" onmouseout = "unDo()">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ultimate_Frisbee_Colorado_Cup_2005.jpg/512px-Ultimate_Frisbee_Colorado_Cup_2005.jpg" alt="image2" class="img-fluid rounded mx-auto d-block" onmouseover = "upDate(this)" onmouseout = "unDo()">
+            </div>
+        
+           
+        </div>
+<br><br>
+      <div class="row">
+            <div class="col-lg-8 col-md-8">
+                <table class="table table-hover table-bordered" id="mytable">
+                    <thead class="table-primary">
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Image Name</th>
+                        <th scope="col">short description</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="r1" onmouseover = "tblUp(this)" onmouseout = "tblunDo()">
+                        <th scope="row">1</th>
+                        <td>Sport Image1</td>
+                        <td>short description1</td>
+                        
+                      </tr>
+                      <tr id="r2" onmouseover = "tblUp(this)" onmouseout = "tblunDo()">
+                        <th scope="row">2</th>
+                        <td>Sport Image2</td>
+                        <td>short description2</td>
+                        
+                      </tr>
+                      <tr id="r3" onmouseover = "tblUp(this)" onmouseout = "tblunDo()">
+                        <th scope="row">3</th>
+                        <td>Sport Image3</td>
+                        <td>short description3</td>
+                        
+                      </tr>
+                     
+                      <tr id="r4" onmouseover = "tblUp(this)" onmouseout = "tblunDo()">
+                        <th scope="row">4</th>
+                        <td>Sport Image4</td>
+                        <td>short description4</td>
+                        
+                      </tr>
+                      <tr id="r5" onmouseover = "tblUp(this)" onmouseout = "tblunDo()">
+                        <th scope="row">5</th>
+                        <td>Sport Image5</td>
+                        <td>short description5</td>
+                        
+                      </tr>
+                      <tr id="r6" onmouseover = "tblUp(this)" onmouseout = "tblunDo()">
+                        <th scope="row">6</th>
+                        <td>Sport Image6</td>
+                        <td>short description6</td>
+                        
+                      </tr>
+                     
+
+                    </tbody>
+                  </table>
+                
+            </div>
+              <div id = "image" class="col-lg-4 col-md-4">
+                Hover over an image below to display here.
+            </div>
+          
+      </div>
+    </div>
+
+
+<script>
+
+    
+function upDate(previewPic){
+ 
+    
+ document.getElementById('image').innerHTML=previewPic.alt;
+ document.getElementById('image').style.backgroundImage="url('"+previewPic.src+"')";  
+     }
+ 
+function unDo(){
+   
+  var oldAlt = "Hover over an image below to display here.";
+
+ document.getElementById('image').innerHTML=oldAlt;
+ document.getElementById('image').style.background='#8e68ff';
+ document.getElementById('image').style.backgroundImage="url('')";
+ 
+         }
+
+
+function tblUp(previewTbl){
+           
+           document.getElementById('image').innerHTML=previewTbl.innerHTML;
+           document.getElementById('image').style.background=' #feb236';
+           
+
+         }
+
+function tblunDo(){
+
+            var oldAlt = "Hover over an image below to display here.";
+
+            document.getElementById('image').innerHTML=oldAlt;
+            document.getElementById('image').style.background='#8e68ff';
+        }
+
+</script>
+
+</body>
+</html>
